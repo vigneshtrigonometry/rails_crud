@@ -1,0 +1,14 @@
+<%= form_for @article do |f| %>
+<table style="align:left">
+  <tr><td>
+    <%= f.label :title %></td>
+    <td><%= f.text_field :title %> </td>
+  </tr>
+  <tr><td>
+    <%= f.label :description %></td>
+    <td><%= f.text_area :description %> </td>
+  </tr>
+  <tr><td  rowspan = "2">
+    <%= f.submit "Blog!" %></td></tr>
+</table>
+<% end %>
