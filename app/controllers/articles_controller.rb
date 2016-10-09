@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :get_article, only: [:show, :edit, :update, :destroy]
+  before_action :get_article, only: [:show, :edit, :update, :destroy] #following DRY principle, segregating some common code to private and calling them for requests.
   def index
     @message = "Welcome to blogs application"
     @articles = Article.all
